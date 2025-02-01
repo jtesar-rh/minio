@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: minio
+  name: webui
+spec:
+  port:
+    targetPort: 9001
+  to:
+    kind: Service
+    name: webui
+    weight: 100
