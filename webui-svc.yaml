@@ -4,6 +4,7 @@ metadata:
   labels:
     app: minio
   name: webui
+  namespace: minio
 spec:
   ports:
   - port: 9001
